@@ -313,25 +313,26 @@
                     <div class="inner">
 						
 						<!-- table -->
-			 			<table id = "showsDates" style="width:100%">
-						  	<tr>
-						    	<td>29 de marzo en El Emergente</td>
-						  	</tr>
-						  	<tr>
-								<td colspan="5">
-								<!-- additional custom info is here (for date 1) --> 
-								</td>
-							</tr>
+			 			<table class="table table-condensed" style="border-collapse:collapse;">
+						    <thead>
+						    </thead>
 
-						  	<tr>
-						    	<td>25 de abril en La Vieja Guarida</td>
-						  	</tr>
-						  	<tr>
-								<td colspan="5">
-								<!-- additional custom info is here (for date 2) --> 
-								</td>
-							</tr>
+						    <tbody>
+						        <tr data-toggle="collapse" data-target="#demo1" class="accordion-toggle">
+						            <td>29 de marzo en El Emergente</td>
 
+						        </tr>
+						        <tr >
+						            <td colspan="6" class="hiddenRow"><div class="accordian-body collapse" id="demo1"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse consectetur porta semper. Fusce eget ultrices nisi, quis molestie purus. Nunc condimentum metus at ullamcorper sagittis. Maecenas at odio non ligula laoreet molestie at ac tellus posuere. </div> </td>
+						        </tr>
+						        <tr data-toggle="collapse" data-target="#demo2" class="accordion-toggle">
+						            <td>25 de abril en La Vieja Guarida</td>
+						            
+						        </tr>
+						        <tr>
+						            <td colspan="6" class="hiddenRow"><div id="demo2" class="accordian-body collapse">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse consectetur porta semper. Fusce eget ultrices nisi, quis molestie purus. Nunc condimentum metus at ullamcorper sagittis. Maecenas at odio non ligula laoreet molestie at ac tellus posuere.</div></td>
+						        </tr>
+						    </tbody>
 						</table>
 
                     </div>
@@ -546,7 +547,6 @@
 	<script src="js/wow.min.js"></script>
     <!-- Custom Theme JavaScript -->
     <script src="js/custom.js"></script>
-    <script type="text/javascript" src="js/jExpand.js"></script>
 
 <script type="text/javascript">
     $(document).ready(function(){
