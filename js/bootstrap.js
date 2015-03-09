@@ -1958,4 +1958,11 @@ $( "#imageGallery" ).click(function() {
 });
 
 
+$( "#imageShows" ).click(function() {
+  $("html, body").animate({ scrollTop: $('#shows').offset().top }, 1000);
+});
+
+
+$('#showsDates').jExpand();
+
 }(jQuery);
