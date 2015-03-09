@@ -1948,4 +1948,14 @@ if (typeof jQuery === 'undefined') { throw new Error('Bootstrap requires jQuery'
     })
   })
 
+
+$( "#imageMusic" ).click(function() {
+  $("html, body").animate({ scrollTop: $('#music').offset().top }, 1000);
+});
+
+$( "#imageGallery" ).click(function() {
+  $("html, body").animate({ scrollTop: $('#gallery').offset().top }, 1000);
+});
+
+
 }(jQuery);
