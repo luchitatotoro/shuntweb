@@ -19,6 +19,11 @@
     <link href="css/style.css" rel="stylesheet">
 	<link href="color/default.css" rel="stylesheet">
 
+
+	<script
+		src="http://maps.googleapis.com/maps/api/js">
+	</script>
+
 </head>
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-custom">
@@ -301,12 +306,13 @@
 
 	<div class="container">
 
-		<div class="row">
+		<!-- <div class="row">
 			<div class="col-lg-2 col-lg-offset-5">
 				<hr class="marginbot-50">
 			</div>
-		</div>
+		</div> -->
         <div class="row">
+        	<!-- <div class = "col-md-6"> -->
             <div class="text-center">
 				<div class="wow bounceInUp" data-wow-delay="0.2s">
                 <div class="team boxed-grey">
@@ -319,18 +325,18 @@
 
 						    <tbody>
 						        <tr data-toggle="collapse" data-target="#demo1" class="accordion-toggle">
-						            <td>29 de marzo en El Emergente</td>
+						            <td id= "Date1">29 de marzo en El Emergente</td>
 
 						        </tr>
 						        <tr >
-						            <td colspan="6" class="hiddenRow"><div class="accordian-body collapse" id="demo1"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse consectetur porta semper. Fusce eget ultrices nisi, quis molestie purus. Nunc condimentum metus at ullamcorper sagittis. Maecenas at odio non ligula laoreet molestie at ac tellus posuere. </div> </td>
+						            <td colspan="6" class="hiddenRow"><div class="accordian-body collapse" id="demo1"><img src="img/flyer.jpg"/></div> </td>
 						        </tr>
 						        <tr data-toggle="collapse" data-target="#demo2" class="accordion-toggle">
 						            <td>25 de abril en La Vieja Guarida</td>
 						            
 						        </tr>
 						        <tr>
-						            <td colspan="6" class="hiddenRow"><div id="demo2" class="accordian-body collapse">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse consectetur porta semper. Fusce eget ultrices nisi, quis molestie purus. Nunc condimentum metus at ullamcorper sagittis. Maecenas at odio non ligula laoreet molestie at ac tellus posuere.</div></td>
+						            <td id "Date2" colspan="6" class="hiddenRow"><div id="demo2" class="accordian-body collapse"><img src="img/flyer.jpg"/></div></td>
 						        </tr>
 						    </tbody>
 						</table>
@@ -338,9 +344,15 @@
                     </div>
                 </div>
 				</div>
+            	<!-- </div> -->
             </div>
 			
-        </div>		
+        </div>
+        <div class="row">
+        	<div id="googleMap" style="width:500px;height:380px;"></div>
+        </div>
+
+
 		</div>
 	</section>		
 
@@ -548,11 +560,12 @@
     <!-- Custom Theme JavaScript -->
     <script src="js/custom.js"></script>
 
-<script type="text/javascript">
+
+<!--<script type="text/javascript">
     $(document).ready(function(){
         $('.carousel').carousel();
     });
-</script>
+</script>-->
 
 
 

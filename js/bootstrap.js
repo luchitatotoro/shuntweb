@@ -1962,10 +1962,42 @@ $( "#imageShows" ).click(function() {
   $("html, body").animate({ scrollTop: $('#shows').offset().top }, 1000);
 });
 
-$('.Date').click(function(){
-   $(this).find('span').text(function(_, value){return value=='-'?'+':'-'});
-    $(this).nextUntil('tr.Date').slideToggle(100, function(){
-    });
+
+$(document).ready(function(){
+        $('.carousel').carousel();
+});
+
+function initialize() {
+  var elEmergente = new google.maps.LatLng(-34.6048131,-58.41332339999997);
+  var mapProp = {
+    center:new google.maps.LatLng(-34.6048131,-58.41332339999997),
+    zoom:15,
+    mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+  var map=new google.maps.Map(document.getElementById("googleMap"), mapProp);
+}
+google.maps.event.addDomListener(window, 'load', initialize);
+
+$( "#Date1" ).click(function() {
+    var elEmergente = new google.maps.LatLng(-34.6048131,-58.41332339999997);
+    map.setCenter(new google.maps.LatLng(elEmergente));
+    map.setZoom(15);
+    var marker = new google.maps.Marker({
+    position: elEmergente,
+    map: map,
+    title:"El Emergente - Gallo 333"
+  });
+});
+
+$( "#Date2" ).click(function() {
+    var laViejaGuardia = new google.maps.LatLng(-34.6048131,-58.41332339999997);
+    map.setCenter(new google.maps.LatLng(laViejaGuardia));
+    map.setZoom(15);
+    var marker = new google.maps.Marker({
+    position: laViejaGuardia,
+    map: map,
+    title:"La Vieja Guarida - Guardia Vieja 3777"
+  });
 });
 
 
