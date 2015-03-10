@@ -70,7 +70,7 @@
 	
 		<div class="slogan">
 			<h2><span class="text_color">Shunt</span> </h2>
-			<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h4>
+			<h4>Combinando todo lo que te gusta y lo que odiás del rock para explorarte la cabeza</h4>
 		</div>
 		<div class="page-scroll">
 			<a href="#service" class="btn btn-circle">
@@ -145,7 +145,7 @@
                 <div class="team boxed-grey">
                     <div class="inner">
 						<h5>Fer</h5>
-                        <p class="subtitle">Batería</p>
+                        <p class="subtitle">Batería y voz</p>
                         <div class="avatar"><img src="img/team/4.jpg" alt="" class="img-responsive img-circle" /></div>
 
                     </div>
@@ -191,7 +191,7 @@
 					</div>
 					<div class="service-desc">
 						<h5>Música</h5>
-						<p>Vestibulum tincidunt enim in pharetra malesuada. Duis semper magna metus electram accommodare.</p>
+						<p>Rabioso y furioso para los cebados y baladas para los sensibleros.</p>
 					</div>
                 </div>
 				</div>
@@ -204,7 +204,7 @@
 					</div>
 					<div class="service-desc">
 						<h5>Shows</h5>
-						<p>Vestibulum tincidunt enim in pharetra malesuada. Duis semper magna metus electram accommodare.</p>
+						<p>Un seguimiento extensivo de los geriátricos donde se quejarán por ruidos molestos.</p>
 					</div>
                 </div>
 				</div>
@@ -218,7 +218,7 @@
 					</div>
 					<div class="service-desc">
 						<h5>Galería</h5>
-						<p>Vestibulum tincidunt enim in pharetra malesuada. Duis semper magna metus electram accommodare.</p>
+						<p>Imágenes para enmarcar y poner en tu mesita de luz.</p>
 					</div>
                 </div>
 				</div>
@@ -231,7 +231,7 @@
 					</div>
 					<div class="service-desc">
 						<h5>Info</h5>
-						<p>Vestibulum tincidunt enim in pharetra malesuada. Duis semper magna metus electram accommodare.</p>
+						<p>Menudencias para los curiosos y para los que deseen ganar algún concurso en el futuro.</p>
 					</div>
                 </div>
 				</div>
@@ -252,6 +252,7 @@
 					<div class="wow bounceInDown" data-wow-delay="0.4s">
 					<div class="section-heading">
 					<h2>Música</h2>
+					<h4>Nuestro primer disco, SHUNT (faltaron ideas para un nombre)</h4>
 					<i class="fa fa-2x fa-angle-down"></i>
 
 					</div>
@@ -295,6 +296,7 @@
 					<div class="wow bounceInDown" data-wow-delay="0.4s">
 					<div class="section-heading">
 					<h2>Shows</h2>
+					<h4>Leer esto implica asistencia obligatoria</h4>
 					<i class="fa fa-2x fa-angle-down"></i>
 
 					</div>
@@ -304,61 +306,77 @@
 			</div>
 		</div>
 
-	<div class="container">
-
-		<!-- <div class="row">
-			<div class="col-lg-2 col-lg-offset-5">
-				<hr class="marginbot-50">
-			</div>
-		</div> -->
+	<div class="container-fluid">
         <div class="row">
-        	<!-- <div class = "col-md-6"> -->
+        	<div class="col-lg-6">
             <div class="text-center">
 				<div class="wow bounceInUp" data-wow-delay="0.2s">
                 <div class="team boxed-grey">
                     <div class="inner">
-						
 						<!-- table -->
-			 			<table class="table table-condensed" style="border-collapse:collapse;">
-						    <thead>
-						    </thead>
-
+			 			<!-- <table class="table table-condensed" style="border-collapse:collapse;" id = "tabla">
 						    <tbody>
-						        <tr data-toggle="collapse" data-target="#demo1" class="accordion-toggle">
+						        <tr data-toggle="collapse" data-target="#demo1" class="accordion">
 						            <td id= "Date1">29 de marzo en El Emergente</td>
-
 						        </tr>
 						        <tr >
-						            <td colspan="6" class="hiddenRow"><div class="accordian-body collapse" id="demo1"><img src="img/flyer.jpg"/></div> </td>
+						            <td colspan="6" class="hiddenRow"><div class="accordian-body collapse" id="demo1"><img src="img/flyer.jpg" width = "500px" height = "300px"/></div> </td>
 						        </tr>
-						        <tr data-toggle="collapse" data-target="#demo2" class="accordion-toggle">
-						            <td>25 de abril en La Vieja Guarida</td>
-						            
+						        <tr data-toggle="collapse" data-target="#demo2" class="accordion">
+						            <td id= "Date2">25 de abril en La Vieja Guarida</td>
 						        </tr>
 						        <tr>
-						            <td id "Date2" colspan="6" class="hiddenRow"><div id="demo2" class="accordian-body collapse"><img src="img/flyer.jpg"/></div></td>
+						            <td colspan="6" class="hiddenRow"><div id="demo2" class="accordian-body collapse"><img src="img/flyer.jpg" width = "500px" height = "300px"/></div></td>
 						        </tr>
 						    </tbody>
-						</table>
+						</table> -->
+
+					<div class="panel-group" id="accordion">
+					  <div class="panel panel-default">
+					    <div class="panel-heading">
+					      <h4 class="panel-title">
+					        <a id = "Date1" data-toggle="collapse" data-parent="#accordion" href="#collapse1">29 de marzo en El Emergente</a>
+					      </h4>
+					    </div>
+					    <div id="collapse1" class="panel-collapse collapse in">
+					      <div class="panel-body">
+					        <img src="img/flyer.jpg" width = "500px" height = "300px"/>
+					      </div>
+					    </div>
+					  </div>
+					  <div class="panel panel-default">
+					    <div class="panel-heading">
+					      <h4 class="panel-title">
+					        <a id = "Date2" data-toggle="collapse" data-parent="#accordion" href="#collapse2">25 de abril en La Vieja Guarida</a>
+					      </h4>
+					    </div>
+					    <div id="collapse2" class="panel-collapse collapse">
+					      <div class="panel-body">
+					        <img src="img/flyer.jpg" width = "500px" height = "300px"/>
+					      </div>
+					    </div>
+					  </div>
+					</div>
 
                     </div>
                 </div>
 				</div>
-            	<!-- </div> -->
             </div>
-			
-        </div>
-        <div class="row">
-        	<div id="googleMap" style="width:500px;height:380px;"></div>
-        </div>
-
-
+            </div>
+	        <div id = "wraper">
+	        	<div class="col-lg-6">
+		        	<div id="googleMap1" style="width:500px;height:380px;"></div>
+		        	<div id="googleMap2" style="width:500px;height:380px;"></div>
+		        </div>
+		    </div>
+		    </div>
 		</div>
+
+		<hr class="endSection">
+
 	</section>		
 
 	<!--/Section: shows -->
-
-
 
 	<!-- Section: image -->
 	<section id= "gallery" class="home-section text-center">
@@ -394,12 +412,24 @@
 						<div id="myCarousel" class="carousel slide" data-interval= "5000" style="margin: 0 auto;">
 							<div class="carousel-inner"><div class="item active">
 								<img width ="700" height= "500" src="img/1.jpg"/>
+								<div class= "carousel-caption">
+									<!-- <h3>Image 1</h3> -->
+									<p>Image 1 descritpion</p>
+								</div>
 							</div>
 							<div class="item">
 								<img width ="700" height= "500" src="img/2.jpg"/>
+									<div class= "carousel-caption">
+										<!-- <h3>Image 1</h3> -->
+										<p>Image 1 descritpion</p>
+									</div>
 								</div>
 							<div class="item">
 								<img width ="700" height= "500" src="img/3.jpg"/>
+									<div class= "carousel-caption">
+										<!-- <h3>Image 1</h3> -->
+										<p>Image 1 descritpion</p>
+									</div>
 							</div>
 							</div>
 							<!-- Controls -->
