@@ -1962,6 +1962,10 @@ $( "#imageShows" ).click(function() {
   $("html, body").animate({ scrollTop: $('#shows').offset().top }, 1000);
 });
 
+$( "#imageInfo" ).click(function() {
+  $("html, body").animate({ scrollTop: $('#info').offset().top }, 1000);
+});
+
 
 $(document).ready(function(){
         $('.carousel').carousel();
